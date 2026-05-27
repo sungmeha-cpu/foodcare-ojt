@@ -630,6 +630,61 @@
   .particle.p4 { width: 5px; height: 5px; background: rgba(241,196,15,0.25); animation: float 4.5s ease-in-out infinite 0.5s; }
   .particle.p5 { width: 3px; height: 3px; background: rgba(255,255,255,0.15); animation: float 8s ease-in-out infinite 3s; }
 
+  /* ===== PRODUCT CATALOG ===== */
+  .slide-section.s4 { background: linear-gradient(135deg, #2A4A1B, #1B3A2A); }
+  .slide-section.s4 .part-badge { background: linear-gradient(135deg, #27AE60, #1ABC9C); }
+  .slide-section.s4 .line { background: #1ABC9C; }
+
+  .prod-grid {
+    flex: 1; display: grid; gap: 16px; padding: 8px 36px 24px; align-content: center;
+  }
+  .prod-grid.col3 { grid-template-columns: repeat(3, 1fr); }
+  .prod-grid.col4 { grid-template-columns: repeat(4, 1fr); }
+  .prod-card {
+    background: var(--light-bg); border-radius: 14px; padding: 22px 18px;
+    text-align: center; border: 1px solid #e8e8e8; position: relative;
+  }
+  .prod-card .step-badge {
+    display: inline-block; font-size: 11px; font-weight: 700; color: #fff;
+    background: var(--accent); padding: 3px 12px; border-radius: 12px; margin-bottom: 8px;
+  }
+  .prod-card .step-badge.blue { background: var(--blue); }
+  .prod-card .step-badge.orange { background: var(--accent2); }
+  .prod-card .step-badge.new { background: #E74C3C; }
+  .prod-card h4 { font-size: 18px; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+  .prod-card .age { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .prod-card p { font-size: 13px; color: #555; line-height: 1.6; }
+  .prod-card .spec { font-size: 12px; color: var(--gray); margin-top: 8px; font-weight: 500; }
+  .prod-card .spec b { color: var(--primary); }
+
+  .prod-intro {
+    flex: 1; display: flex; align-items: center; padding: 0 48px 24px; gap: 36px;
+  }
+  .prod-intro-info { flex: 1; }
+  .prod-intro-info h3 { font-size: 24px; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+  .prod-intro-info .badge-new {
+    display: inline-block; font-size: 12px; font-weight: 700; color: #fff;
+    background: #E74C3C; padding: 3px 14px; border-radius: 12px; margin-left: 8px; vertical-align: middle;
+  }
+  .prod-intro-info p { font-size: 15px; color: #555; line-height: 1.8; }
+  .prod-intro-info .prod-spec-list { list-style: none; margin-top: 12px; }
+  .prod-intro-info .prod-spec-list li {
+    font-size: 14px; color: #444; padding: 4px 0; display: flex; align-items: center; gap: 8px;
+  }
+  .prod-intro-info .prod-spec-list li::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0;
+  }
+  .prod-intro-features {
+    flex: 1; display: flex; flex-wrap: wrap; gap: 12px; align-content: center;
+  }
+  .prod-intro-features .feat {
+    width: calc(50% - 6px); background: #fff; border-radius: 12px; padding: 16px;
+    border: 1px solid #e8e8e8; text-align: center;
+  }
+  .prod-intro-features .feat .feat-icon { font-size: 24px; margin-bottom: 6px; }
+  .prod-intro-features .feat h5 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+  .prod-intro-features .feat p { font-size: 12px; color: var(--gray); }
+
   @media print {
     body { background: #fff; padding: 0; gap: 0; }
     .slide { box-shadow: none; border-radius: 0; page-break-after: always; }
@@ -659,7 +714,7 @@
     <div class="meta">푸드케어 클레 | 커머스실 | 2026년 4월</div>
     <div class="quote">"내 아이에게 먹일 수 있는 이유식을 만들자"</div>
   </div>
-  <span class="slide-number">1 / 24</span>
+  <span class="slide-number">1 / 37</span>
 </div>
 
 <!-- ===== 2. 목차 ===== -->
@@ -687,7 +742,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">2 / 24</span>
+  <span class="slide-number dark">2 / 37</span>
 </div>
 
 <!-- ===== 3. PART 1 구분 ===== -->
@@ -707,7 +762,7 @@
     <p>Baby Nutrition Meal, Since 2001</p>
     <div class="line"></div>
   </div>
-  <span class="slide-number">3 / 24</span>
+  <span class="slide-number">3 / 37</span>
 </div>
 
 <!-- ===== 4. 창업 스토리 ===== -->
@@ -741,7 +796,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">4 / 24</span>
+  <span class="slide-number dark">4 / 37</span>
 </div>
 
 <!-- ===== 5. CEO 인사말 ===== -->
@@ -765,7 +820,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">5 / 24</span>
+  <span class="slide-number dark">5 / 37</span>
 </div>
 
 <!-- ===== 6. 회사 연혁 ===== -->
@@ -812,7 +867,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">6 / 24</span>
+  <span class="slide-number dark">6 / 37</span>
 </div>
 
 <!-- ===== 7. 비전 ===== -->
@@ -837,7 +892,7 @@
     </div>
     <div class="tagline">바른 식(食)문화를 만들어 갑니다</div>
   </div>
-  <span class="slide-number">7 / 24</span>
+  <span class="slide-number">7 / 37</span>
 </div>
 
 <!-- ===== 8. 핵심 가치 ===== -->
@@ -905,7 +960,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">8 / 24</span>
+  <span class="slide-number dark">8 / 37</span>
 </div>
 
 <!-- ===== 9. 온·오프라인 현황 ===== -->
@@ -931,7 +986,7 @@
       <div class="tcol-icon">🏬</div>
       <h3>오프라인</h3>
       <ul>
-        <li>전국 17개 매장 운영</li>
+        <li>전국 18개 매장 운영</li>
         <li>롯데백화점 6곳</li>
         <li>갤러리아 백화점 2곳</li>
         <li>AK 백화점 2곳 · 스타필드 4곳</li>
@@ -941,7 +996,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">9 / 24</span>
+  <span class="slide-number dark">9 / 37</span>
 </div>
 
 <!-- ===== 10. 수상 및 해외 ===== -->
@@ -972,7 +1027,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">10 / 24</span>
+  <span class="slide-number dark">10 / 37</span>
 </div>
 
 <!-- ===== 11. PART 2 구분 ===== -->
@@ -992,7 +1047,7 @@
     <p>온·오프라인 판매 전략을 총괄하는 실행 조직</p>
     <div class="line"></div>
   </div>
-  <span class="slide-number">11 / 24</span>
+  <span class="slide-number">11 / 37</span>
 </div>
 
 <!-- ===== 12. 커머스실 조직 ===== -->
@@ -1038,7 +1093,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">12 / 24</span>
+  <span class="slide-number dark">12 / 37</span>
 </div>
 
 <!-- ===== 13. 고객 여정 3단계 ===== -->
@@ -1090,7 +1145,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">13 / 24</span>
+  <span class="slide-number dark">13 / 37</span>
 </div>
 
 <!-- ===== 14. 4개 채널 ===== -->
@@ -1136,7 +1191,7 @@
         <div class="vcard-num" style="color:var(--primary)">~25%</div>
         <div class="vcard-title">직영점 (오프라인)<br><span style="font-size:13px;color:var(--gray)">신뢰의 접점</span></div>
         <div class="vcard-desc">
-          ▪ 전국 17개 매장<br>
+          ▪ 전국 18개 매장<br>
           ▪ 제품을 직접 보고 상담<br>
           ▪ 매장 운영·직원 관리<br>
           ▪ 프로모션·입출고 관리
@@ -1159,7 +1214,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">14 / 24</span>
+  <span class="slide-number dark">14 / 37</span>
 </div>
 
 <!-- ===== 15. 2026 전략 ===== -->
@@ -1183,7 +1238,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">15 / 24</span>
+  <span class="slide-number dark">15 / 37</span>
 </div>
 
 <!-- ===== 16. PART 3 구분 ===== -->
@@ -1203,7 +1258,7 @@
     <p>전문 식품 영양사가 디자인한 프리미엄 8단계 이유식</p>
     <div class="line"></div>
   </div>
-  <span class="slide-number">16 / 24</span>
+  <span class="slide-number">16 / 37</span>
 </div>
 
 <!-- ===== 17. 제품 개요 ===== -->
@@ -1229,7 +1284,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">17 / 24</span>
+  <span class="slide-number dark">17 / 37</span>
 </div>
 
 <!-- ===== 18. 초기 단계 ===== -->
@@ -1287,7 +1342,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">18 / 24</span>
+  <span class="slide-number dark">18 / 37</span>
 </div>
 
 <!-- ===== 19. 중기~후기 ===== -->
@@ -1351,7 +1406,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">19 / 24</span>
+  <span class="slide-number dark">19 / 37</span>
 </div>
 
 <!-- ===== 20. 완료기 ===== -->
@@ -1415,7 +1470,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">20 / 24</span>
+  <span class="slide-number dark">20 / 37</span>
 </div>
 
 <!-- ===== 21. 월령별 식재료 ===== -->
@@ -1450,7 +1505,7 @@
     </table>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">21 / 24</span>
+  <span class="slide-number dark">21 / 37</span>
 </div>
 
 <!-- ===== 22. 상황별 이유식 요령 ===== -->
@@ -1484,7 +1539,7 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">22 / 24</span>
+  <span class="slide-number dark">22 / 37</span>
 </div>
 
 <!-- ===== 23. 핵심 정리 ===== -->
@@ -1514,10 +1569,390 @@
     </div>
   </div>
   <span class="footer">푸드케어 클레 | 신입사원 OJT</span>
-  <span class="slide-number dark">23 / 24</span>
+  <span class="slide-number dark">23 / 37</span>
 </div>
 
-<!-- ===== 24. 마무리 ===== -->
+<!-- ===== 25. PART 4 섹션 구분 ===== -->
+<div class="slide slide-section s4">
+  <div class="particle p1" style="top:15%;left:10%;"></div>
+  <div class="particle p2" style="top:25%;right:15%;"></div>
+  <div class="particle p3" style="bottom:20%;left:20%;"></div>
+  <div class="particle p4" style="top:40%;right:8%;"></div>
+  <div class="particle p5" style="bottom:30%;right:25%;"></div>
+  <div class="inner">
+    <div class="part-badge">PART 4</div>
+    <h2>클레 제품 카탈로그</h2>
+    <p>Foodcare Cle Product Catalog 2026</p>
+    <div class="line"></div>
+  </div>
+  <span class="slide-number">25 / 37</span>
+</div>
+
+<!-- ===== 26. 냉장 이유식 - 준비기~초기2 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">BABY FOOD</div>
+    <h2>냉장 이유식 (1) 준비기 ~ 초기</h2>
+    <div class="sub">아이의 성장 단계에 맞춘 균형 잡힌 식사 | 소비기한: 제조일로부터 25일</div>
+  </div>
+  <div class="prod-grid col3">
+    <div class="prod-card">
+      <span class="step-badge">STEP 01</span>
+      <h4>준비기</h4>
+      <div class="age">생후 4개월 전후</div>
+      <p>이유식을 처음 시작하는 아기를 위한<br>부드럽고 소화가 쉬운 쌀죽</p>
+      <div class="spec">1병 <b>140g</b></div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge">STEP 02</span>
+      <h4>초기 1</h4>
+      <div class="age">생후 4-5개월</div>
+      <p>쌀과 한 가지 재료로 시작하는<br>기초 이유식 단계</p>
+      <div class="spec">1병 <b>150g</b> (14종)</div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge">STEP 03</span>
+      <h4>초기 2</h4>
+      <div class="age">생후 5-6개월</div>
+      <p>두 가지 재료로 확장하며<br>다양한 식감을 경험하는 단계</p>
+      <div class="spec">1병 <b>150g</b> (28종)</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">26 / 37</span>
+</div>
+
+<!-- ===== 27. 냉장 이유식 - 중기~후기무른밥 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">BABY FOOD</div>
+    <h2>냉장 이유식 (2) 중기 ~ 후기무른밥</h2>
+    <div class="sub">아이의 성장 단계에 맞춘 균형 잡힌 식사 | 소비기한: 제조일로부터 25일</div>
+  </div>
+  <div class="prod-grid col3">
+    <div class="prod-card">
+      <span class="step-badge blue">STEP 04</span>
+      <h4>중기</h4>
+      <div class="age">생후 7-8개월</div>
+      <p>동물성 단백질을 추가하여<br>재료의 종류가 확장되는 단계<br>부드러운 식감에서 씹는 연습 시작</p>
+      <div class="spec">1병 <b>150g</b> (56종)</div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge blue">STEP 05</span>
+      <h4>후기</h4>
+      <div class="age">생후 9-11개월</div>
+      <p>하루 영양의 대부분을<br>이유식으로 섭취하는 단계<br>식사와 유사한 형태로 성장</p>
+      <div class="spec">1병 <b>200g</b> (84종)</div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge orange">STEP 06</span>
+      <h4>후기무른밥</h4>
+      <div class="age">생후 11-15개월</div>
+      <p>다양한 식재료와 식감을 경험하며<br>식습관을 형성하는 단계<br>밥알 크기를 키워 일반식으로 전환</p>
+      <div class="spec">1병 <b>200g</b> (84종)</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">27 / 37</span>
+</div>
+
+<!-- ===== 28. 냉장 이유식 - 영양밥/영양국/영양찬 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">BABY FOOD</div>
+    <h2>냉장 이유식 (3) 영양밥 / 영양국 / 영양찬</h2>
+    <div class="sub">생후 15개월 이후 | 소비기한: 제조일로부터 25일</div>
+  </div>
+  <div class="prod-grid col3">
+    <div class="prod-card">
+      <span class="step-badge">STEP 07</span>
+      <h4>영양밥</h4>
+      <div class="age">생후 15개월 이후</div>
+      <p>다양한 질감과 고른 영양공급을 위해<br>유기농 쌀과 육류, 채소로 만든<br>비빔밥과 같은 형태의 식사</p>
+      <div class="spec">1병 <b>150g</b> (84종)</div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge">STEP 08</span>
+      <h4>영양국</h4>
+      <div class="age">생후 15개월 이후</div>
+      <p>진한 천연 육수에 쇠고기, 닭고기, 채소로<br>구성되고, 끓는 연습을 할 수 있도록<br>건더기 크기를 맞춘 저염국</p>
+      <div class="spec">1병 <b>140g</b> (84종)</div>
+    </div>
+    <div class="prod-card">
+      <span class="step-badge">STEP 09</span>
+      <h4>영양찬</h4>
+      <div class="age">생후 15개월 이후</div>
+      <p>아이가 직접 집어먹을 수 있는<br>핑거푸드 형태로 구성된 부드러운<br>일품 형태의 반찬</p>
+      <div class="spec">1병 <b>150g</b> (84종)</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">28 / 37</span>
+</div>
+
+<!-- ===== 29. 실온 이유식 ===== -->
+<div class="slide sl">
+  <div class="top-accent orange"></div>
+  <div class="slide-header">
+    <div class="tag" style="color:var(--accent2);background:#FFF3E0;">ROOM TEMP BABY FOOD</div>
+    <h2>실온 이유식 <span style="font-size:16px;background:#E74C3C;color:#fff;padding:3px 12px;border-radius:12px;vertical-align:middle;">5월 출시예정</span></h2>
+    <div class="sub">8MILES | 프리미엄 실온 이유식 | 소비기한: 제조일로부터 12개월</div>
+  </div>
+  <div class="prod-intro">
+    <div class="prod-intro-info">
+      <h3>Baby Rice Porridge</h3>
+      <p>신선함 가득한 원재료의 힘, 우리 아이의 입맛에 꼭 맞게 설계된 똑똑한 <strong>프리미엄</strong> 이유식입니다.</p>
+      <ul class="prod-spec-list">
+        <li>소고기, 닭고기, 해산물 등 다양한 원재료 사용</li>
+        <li>살균 처리된 유리병으로 상온 보관 가능</li>
+        <li>중기(7-8m), 후기(9-11m), 무른밥(12-15m) 3STEP</li>
+        <li>인공 감미료, 보존료 Zero</li>
+        <li>3 textures / 12 flavours</li>
+      </ul>
+    </div>
+    <div class="prod-intro-features">
+      <div class="feat"><div class="feat-icon">🍚</div><h5>3단계 질감</h5><p>성장에 맞춘 식감</p></div>
+      <div class="feat"><div class="feat-icon">🫙</div><h5>유리병 보관</h5><p>상온 보관 가능</p></div>
+      <div class="feat"><div class="feat-icon">🚫</div><h5>무첨가</h5><p>감미료/보존료 Zero</p></div>
+      <div class="feat"><div class="feat-icon">🥩</div><h5>다양한 원재료</h5><p>소고기, 닭고기, 해산물</p></div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">29 / 37</span>
+</div>
+
+<!-- ===== 30. 키즈식, 한우솥밥 ===== -->
+<div class="slide sl">
+  <div class="top-accent orange"></div>
+  <div class="slide-header">
+    <div class="tag" style="color:var(--accent2);background:#FFF3E0;">KIDS MEAL</div>
+    <h2>키즈식, 한우솥밥 <span style="font-size:16px;background:#E74C3C;color:#fff;padding:3px 12px;border-radius:12px;vertical-align:middle;">5월 출시예정</span></h2>
+    <div class="sub">한 팩으로 우리 아이 한 끼 영양까지 고루 챙길 수 있는 키즈용 솥밥 및 덮밥 라인</div>
+  </div>
+  <div class="prod-intro">
+    <div class="prod-intro-info">
+      <h3>키즈용 솥밥 &amp; 덮밥</h3>
+      <p>오는 5월, 한우 솥밥 1종을 포함한 솥밥&amp;덮밥 라인업 7종과<br>키즈용 반찬으로 두부를 원재료로 만든 '두부볼(with 특제소스)'이 출시될 예정입니다.</p>
+      <ul class="prod-spec-list">
+        <li>보관방법: 실온보관</li>
+        <li>용량: 1팩 210g</li>
+        <li>소비기한: 제조일로부터 6개월</li>
+      </ul>
+    </div>
+    <div class="prod-intro-features">
+      <div class="feat"><div class="feat-icon">🍱</div><h5>솥밥 &amp; 덮밥</h5><p>7종 라인업</p></div>
+      <div class="feat"><div class="feat-icon">🐄</div><h5>한우 솥밥</h5><p>프리미엄 원재료</p></div>
+      <div class="feat"><div class="feat-icon">🫘</div><h5>두부볼</h5><p>with 특제소스</p></div>
+      <div class="feat"><div class="feat-icon">📦</div><h5>실온보관</h5><p>편리한 보관</p></div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">30 / 37</span>
+</div>
+
+<!-- ===== 31. 반찬류 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">SIDE DISHES</div>
+    <h2>반찬류</h2>
+    <div class="sub">아이 식탁을 더 간편하고 건강하게 채워주는 반찬</div>
+  </div>
+  <div class="prod-grid col4">
+    <div class="prod-card">
+      <h4>소고기 장조림</h4>
+      <p>부드럽게 찢어 아이가 먹기 좋은 단백질 반찬</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100g/병</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>메추리알 장조림</h4>
+      <p>한 입 크기로 간편하게 즐기는 영양 반찬</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100g/병</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>무조미김 / 조미김</h4>
+      <p>바삭하게 즐기는 간편 김 스낵</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>15g / 70g</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>김자반</h4>
+      <p>아이 입맛에 맞춘 고소한 밥반찬</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>30g/병</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">31 / 37</span>
+</div>
+
+<!-- ===== 32. 퓨레 요거트 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">PUREE &amp; YOGURT</div>
+    <h2>퓨레 &middot; 요거트</h2>
+    <div class="sub">클레의 기준으로 완성한 아이 영양 간식</div>
+  </div>
+  <div class="prod-grid col4">
+    <div class="prod-card">
+      <h4>과일퓨레 4종</h4>
+      <p>사과 / 배 / 블루베리<br>바나나 / 망고</p>
+      <div class="spec">보관: 냉장보관<br>용량: <b>100g/병</b><br>소비기한: 제조일로부터 30일</div>
+    </div>
+    <div class="prod-card">
+      <h4>치즈퓨레 3종</h4>
+      <p>고구마 / 감자 / 단호박</p>
+      <div class="spec">보관: 냉장보관<br>용량: <b>100g/병</b><br>소비기한: 제조일로부터 30일</div>
+    </div>
+    <div class="prod-card">
+      <h4>프로틴퓨레 3종</h4>
+      <p>한우 / 닭 / 병아리콩</p>
+      <div class="spec">보관: 냉장보관<br>용량: <b>100g/병</b><br>소비기한: 제조일로부터 30일</div>
+    </div>
+    <div class="prod-card">
+      <h4>그릭요거트</h4>
+      <p>클레의 기준으로 완성한<br>프리미엄 그릭요거트</p>
+      <div class="spec">보관: 냉장보관<br>용량: <b>110g/병</b><br>소비기한: 제조일로부터 22일</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">32 / 37</span>
+</div>
+
+<!-- ===== 33. 과자류 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">SNACKS</div>
+    <h2>과자류</h2>
+    <div class="sub">먹는 재미까지 더해 아이가 즐겁게 먹는 건강 간식</div>
+  </div>
+  <div class="prod-grid col4">
+    <div class="prod-card">
+      <h4>라이스바 5종</h4>
+      <p>사과 / 바나나 / 고구마<br>단호박 / 블루베리</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>30g/봉</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>쌀떡뻥 5종</h4>
+      <p>시금치 / 당근 / 사과비트<br>표고당근 / 배도라지</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>30g/봉</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>비타퍼거팝 3종</h4>
+      <p>딸기 / 바나나 / 블루베리</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100g/1봉</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>과일칩 2종</h4>
+      <p>딸기 / 사과</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>10g~12g/봉</b><br>소비기한: 제조일로부터 2년</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">33 / 37</span>
+</div>
+
+<!-- ===== 34. 과자류 NEW ===== -->
+<div class="slide sl">
+  <div class="top-accent orange"></div>
+  <div class="slide-header">
+    <div class="tag" style="color:#E74C3C;background:#FDEDEC;">NEW SNACKS</div>
+    <h2>과자류 <span style="font-size:16px;background:#E74C3C;color:#fff;padding:3px 12px;border-radius:12px;vertical-align:middle;">NEW</span></h2>
+    <div class="sub">2026 출시 신제품</div>
+  </div>
+  <div class="prod-intro">
+    <div class="prod-intro-info">
+      <h3>스노우볼 바스틱</h3>
+      <p>무농약으로 재배한 현미와 백미, 국산 우리밀로 정성껏 만든 2026 출시 과자입니다.</p>
+      <p style="margin-top:8px;">눈처럼 부드럽게 녹아내리는 식감과 자연스러운 달콤함으로,<br>아이가 즐겁게 먹을 수 있는 건강 간식입니다.</p>
+      <ul class="prod-spec-list">
+        <li>보관방법: 실온보관</li>
+        <li>용량: 25g</li>
+        <li>소비기한: 제조일로부터 12개월</li>
+      </ul>
+    </div>
+    <div class="prod-intro-features">
+      <div class="feat"><div class="feat-icon">🌾</div><h5>무농약 현미 &amp; 백미</h5><p>안심 원재료</p></div>
+      <div class="feat"><div class="feat-icon">🇰🇷</div><h5>국산 우리밀</h5><p>국내산 원재료</p></div>
+      <div class="feat"><div class="feat-icon">❄️</div><h5>녹아내리는 식감</h5><p>부드러운 스노우볼</p></div>
+      <div class="feat"><div class="feat-icon">🍬</div><h5>자연 달콤함</h5><p>인공감미료 無</p></div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">34 / 37</span>
+</div>
+
+<!-- ===== 35. 주스류 ===== -->
+<div class="slide sl">
+  <div class="top-accent green"></div>
+  <div class="slide-header">
+    <div class="tag">JUICE</div>
+    <h2>주스류</h2>
+    <div class="sub">아이의 하루를 채워주는 건강 음료</div>
+  </div>
+  <div class="prod-grid col3">
+    <div class="prod-card">
+      <h4>배도라지즙</h4>
+      <p>아이를 위한 프리미엄<br>배도라지즙</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100ml*10개입/box</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>엘더베리주스</h4>
+      <p>아이를 위한 건강한<br>엘더베리 주스</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100ml*10개입/box</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+    <div class="prod-card">
+      <h4>보리차</h4>
+      <p>유기농 보리로 만든<br>아이를 위한 보리차</p>
+      <div class="spec">보관: 실온보관<br>용량: <b>100ml*10개입/box</b><br>소비기한: 제조일로부터 1년</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">35 / 37</span>
+</div>
+
+<!-- ===== 36. 건강식품 ===== -->
+<div class="slide sl">
+  <div class="top-accent blue"></div>
+  <div class="slide-header">
+    <div class="tag" style="color:var(--blue);background:#EBF5FB;">HEALTH SUPPLEMENTS</div>
+    <h2>건강식품</h2>
+    <div class="sub">아이 건강을 위한 균형 잡힌 영양 솔루션</div>
+  </div>
+  <div class="prod-grid col4">
+    <div class="prod-card">
+      <h4>그로우뉴</h4>
+      <div class="age">칼마디</div>
+      <p>식품유형: 기타가공품</p>
+      <div class="spec">용량: <b>60g</b> (2,000mg x 30포)<br>소비기한: 제조일로부터 2년</div>
+    </div>
+    <div class="prod-card">
+      <h4>투데이디</h4>
+      <div class="age">비타민D</div>
+      <p>식품유형: 기타식용유지가공품</p>
+      <div class="spec">용량: <b>22.5g</b> (750mg x 30캡슐)<br>소비기한: 제조일로부터 2년</div>
+    </div>
+    <div class="prod-card">
+      <h4>지니어스뉴 특캡스</h4>
+      <div class="age">오메가3</div>
+      <p>식품유형: 기타식용유지가공품</p>
+      <div class="spec">용량: <b>18.9g</b> (630mg x 30캡슐)<br>소비기한: 제조일로부터 2년</div>
+    </div>
+    <div class="prod-card">
+      <h4>데이프로바</h4>
+      <div class="age">유산균</div>
+      <p>식품유형: 건강기능식품</p>
+      <div class="spec">용량: <b>45g</b> (1.5g x 30포)<br>소비기한: 제조일로부터 1년</div>
+    </div>
+  </div>
+  <span class="footer">푸드케어 클레 | 제품 카탈로그</span>
+  <span class="slide-number dark">36 / 37</span>
+</div>
+
+<!-- ===== 37. 마무리 ===== -->
 <div class="slide slide-end">
   <div class="particle p1" style="top:15%;left:10%;"></div>
   <div class="particle p2" style="top:25%;right:15%;"></div>
@@ -1537,7 +1972,7 @@
     <div class="meta">Foodcare / cle | 커머스실 | 신입사원 OJT</div>
     <div class="url">WWW.FOODCARE-CLE.COM</div>
   </div>
-  <span class="slide-number">24 / 24</span>
+  <span class="slide-number">37 / 37</span>
 </div>
 
 </body>
